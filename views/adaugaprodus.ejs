@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+   <title>BrutarieArtFood</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h1 id = "PageTitle">Adauga Produse</h1>
+   <body>
+      <div class = "container">
+         <div class = "form-container">
+         <label for = "produse">Alege un produs:</label>
+            <select name = "produse" id = "produse" class = "produse">
+               <option disabled selected value> -- alegeți un produs -- </option>
+               <option value = "Franzelă">Franzelă</option>
+               <option value = "Pâine">Pâine</option>
+               <option value = "Baton">Baton</option>
+               <option value = "Bulci">Bulci</option>
+               <option value = "Japoneze">Japoneze</option>
+               <option value = "Covrigi">Covrigi</option>
+               <option value = "ColacMare">Colac Mare</option>
+               <option value = "Corn">Corn</option>
+               <option value = "Ștrudel">Ștrudel</option>
+               <option value = "Rulou">Rulou</option>
+               <option value = "Pizza">Pizza</option>
+               <option value = "Covridog">Covridog</option>
+               <option value = "Plăcintă">Plăcintă</option>
+               <option value = "Cozonac">Cozonac</option>
+               <option value = "Turte">Turte</option>
+               <option value = "TurtaMiresei">Turta Miresei</option>
+               <option value = "Ciabatta">Ciabatta</option>
+               <option value = "PlăcintăMoldovenească">Plăcintă Moldovenească</option>
+               <option value = "Colac">Colac</option>
+               <option value = "Baghete">Baghete</option>
+            </select>
+            <div class = "input-container">
+               <div id = "Franzelă" class = "input-data">
+                  <form id = "FranzelăForm">
+                     <select name = "FranzelăTip" required>
+                        <option disabled selected value> -- tip -- </option>
+                        <option value = " Feliată">Feliată</option>
+                        <option value = "">Nefeliată</option>
+                     </select>
+                     <select name = "FranzelăGramaj" required>
+                        <option disabled selected value> -- gramaj(G) -- </option>
+                        <option value = "300">300G</option>
+                        <option value = "400">400G</option>
+                        <option value = "500">500G</option>
+                        <option value = "600">600G</option>
+                     </select>
+                     <input type = "number" name = "FranzelăCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiFranzelă" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Pâine" class = "input-data">
+                  <form id = "PâineForm">
+                     <select name = "PâineTip" required>
+                        <option disabled selected value> -- tip -- </option>
+                        <option value = " La Tavă">La Tavă</option>
+                        <option value = " Neagră">Neagră</option>
+                        <option value = " Împletită">Împletită</option>
+                        <option value = " De Casă">De Casă</option>
+                        <option value = " Cu Cartofi">Cu Cartofi</option>
+                        <option value = " Cu Secară">Cu Secară</option>
+                     </select>
+                     <select name = "PâineGramaj" required>
+                        <option disabled selected value> -- gramaj(G) -- </option>
+                        <option value = "300">300G</option>
+                        <option value = "400">400G</option>
+                        <option value = "500">500G</option>
+                        <option value = "1000">1000G/1KG</option>
+                     </select>
+                     <input type = "number" name = "PâineCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiPâine" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Baton" class = "input-data">
+                  <form id = "BatonForm">
+                     <select name = "BatonGramaj" required>
+                        <option disabled selected value> -- gramaj(G) -- </option>
+                        <option value = "100">100G</option>
+                        <option value = "120">120G</option>
+                        <option value = "130">130G</option>
+                        <option value = "150">150G</option>
+                     </select>
+                     <input type = "number" name = "BatonCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiBaton" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Bulci" class = "input-data">
+                  <form id = "BulciForm">
+                     <select name = "BulciGramaj" required>
+                        <option disabled selected value> -- gramaj(G) -- </option>
+                        <option value = "80">80G</option>
+                        <option value = "100">100G</option>
+                        <option value = "120">120G</option>
+                        <option value = "150">150G</option>
+                        <option value = "200">200G</option>
+                     </select>
+                     <input type = "number" name = "BulciCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiBulci" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Japoneze" class = "input-data">
+                  <form id = "JaponezeForm">
+                     <select name = "JaponezeGramaj" required>
+                        <option disabled selected value> -- gramaj(G) -- </option>
+                        <option value = "120">120G</option>
+                        <option value = "400">400G</option>
+                     </select>
+                     <input type = "number" name = "JaponezeCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiJaponeze" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Covrigi" class = "input-data">
+                  <form id = "CovrigiForm">
+                     <select name = "CovrigiGramaj" required>
+                        <option value = "80">80G</option>
+                     </select>
+                     <input type = "number" name = "CovrigiCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiCovrigi" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "ColacMare" class = "input-data">
+                  <form id = "ColacMareForm" required>
+                     <select name = "ColacMareGramaj" required>
+                        <option disabled selected value> -- gramaj(G) -- </option>
+                        <option value = "1000">1KG</option>
+                        <option value = "1500">1.5KG</option>
+                        <option value = "2000">2KG</option>
+                        <option value = "2500">2.5KG</option>
+                        <option value = "3000">3KG</option>
+                     </select>
+                     <input type = "number" name = "ColacMareCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiColacMare">
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Corn" class = "input-data">
+                  <form id = "CornForm">
+                     <select name = "CornTip" required>
+                        <option disabled selected value> -- tip -- </option>
+                        <option value = " Cu Ciocolată">Cu Ciocolată</option>
+                        <option value = " Cu Vanilie">Cu Vanilie</option>
+                        <option value = " Cu Gem">Cu Gem</option>
+                     </select>
+                     <select name = "CornGramaj" required>
+                        <option value = "100">100G</option>
+                     </select>
+                     <input type = "number" name = "CornCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiCorn" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Ștrudel" class = "input-data">
+                  <form id = "ȘtrudelForm">
+                     <select name = "ȘtrudelTip" required>
+                        <option disabled selected value> -- tip -- </option>
+                        <option value = " Cu Mere">Cu Mere</option>
+                        <option value = " Cu Gem">Cu Gem</option>
+                     </select>
+                     <select name = "ȘtrudelGramaj" required>
+                        <option value = "150">150G</option>
+                     </select>
+                     <input type = "number" name = "ȘtrudelCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiȘtrudel" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Rulou" class = "input-data">
+                  <form id = "RulouForm">
+                     <select name = "RulouTip" required>
+                        <option value = " Cu Nucă">Cu Nucă</option>
+                     </select>
+                     <select name = "RulouGramaj" required>
+                        <option value = "100">100G</option>
+                     </select>
+                     <input type = "number" name = "RulouCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiRulou" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Pizza" class = "input-data">
+                  <form id = "PizzaForm">
+                     <select name = "PizzaGramaj" required>
+                        <option value = "200">200G</option>
+                     </select>
+                     <input type = "number" name = "PizzaCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiPizza" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Covridog" class = "input-data">
+                  <form id = "CovridogForm">
+                     <select name = "CovridogGramaj" required>
+                        <option value = "150">150G</option>
+                     </select>
+                     <input type = "number" name = "CovridogCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiCovridog" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Plăcintă" class = "input-data">
+                  <form id = "PlăcintăForm">
+                     <select name = "PlăcintăTip" required>
+                        <option disabled selected value> -- tip -- </option>
+                        <option value = " Cu Vanilie">Cu Vanilie</option>
+                        <option value = " Cu Gem">Cu Gem</option>
+                        <option value = " Cu Ciocolată">Cu Ciocolată</option>
+                        <option value = " Cu Brânză">Cu Brânză</option>
+                     </select>
+                     <select name = "PlăcintăGramaj" required>
+                        <option value = "200">200G</option>
+                     </select>
+                     <input type = "number" name = "PlăcintăCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiPlăcintă" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Cozonac" class = "input-data">
+                  <form id = "CozonacForm">
+                     <select name = "CozonacTip" required>
+                        <option disabled selected value> -- tip -- </option>
+                        <option value = "">normal</option>
+                        <option value = " Tradițional">Tradițional</option>
+                     </select>
+                     <input type = "number" name = "CozonacGramaj" placeholder = "gramaj(G)" required>
+                     <input type = "number" name = "CozonacCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiCozonac">
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Turte" class = "input-data">
+                  <form id = "TurteForm">
+                     <select name = "TurteGramaj" required>
+                        <option value = "150">150G</option>
+                     </select>
+                     <input type = "number" name = "TurteCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiTurte" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "TurtaMiresei" class = "input-data">
+                  <form id = "TurtaMireseiForm">
+                     <input type = "number" name = "TurtaMireseiGramaj" placeholder = "gramaj(G)" required>
+                     <input type = "number" name = "TurtaMireseiCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiTurtaMiresei" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Ciabatta" class = "input-data">
+                  <form id = "CiabattaForm">
+                     <select name = "CiabattaGramaj" required>
+                        <option value = "400">400G</option>
+                     </select>
+                     <input type = "number" name = "CiabattaCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiCiabatta" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "PlăcintăMoldovenească" class = "input-data">
+                  <form id = "PlăcintăMoldoveneascăForm">
+                     <select name = "PlăcintăMoldoveneascăTip" required>
+                        <option disabled selected value> -- tip -- </option>
+                        <option value = " Cu Cartofi">Cu Cartofi</option>
+                        <option value = " Cu Carne">Cu Carne</option>
+                        <option value = " Cu Dovleac">Cu Dovleac</option>
+                        <option value = " Cu Brânză">Cu Brânză</option>
+                     </select>
+                     <select name = "PlăcintăMoldoveneascăGramaj" required>
+                        <option value = "120">120G</option>
+                     </select>
+                     <input type = "number" name = "PlăcintăMoldoveneascăCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiPlăcintăMoldovenească" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Colac" class = "input-data">
+                  <form id = "ColacForm">
+                     <select name = "ColacGramaj" required>
+                        <option disabled selected value> -- gramaj(G) -- </option>
+                        <option value = "0.10">0.100G</option>
+                        <option value = "0.20">0.200G</option>
+                        <option value = "0.30">0.300G</option>
+                        <option value = "0.50">0.500G</option>
+                        <option value = "0.25">0.250G</option>
+                        <option value = "0.15">0.150G</option>
+                     </select>
+                     <input type = "number" name = "ColacCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiColac" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+               <div id = "Baghete" class = "input-data">
+                  <form id = "BagheteForm">
+                     <select name = "BagheteGramaj" required>
+                        <option value = "300">300G</option>
+                     </select>
+                     <input type = "number" name = "BagheteCantitate" placeholder = "cantitate" required>
+                     <input type="date" id="dataLivrare" name="dataLivrariiBaghete" required>
+                     <input type = "submit" value = "Submit" class = "inputSubmit">
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class = "list-container">
+            <div class="list">
+                
+            </div>
+         </div>
+      </div>
+   </body>
+
+   <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+      $(document).ready(function(){
+         $("#produse").on("change", function()
+         {
+            let denumire = $(this).val()
+            if(denumire != null)
+            {
+               var date = new Date().toISOString().slice(0, 10);
+               let dLiv = "dataLivrarii" + denumire;
+               document.getElementsByName(dLiv)[0].value = date;
+
+               $(".input-data").hide();
+               $("#" + denumire).fadeIn(700);
+
+               //alert(denumire)
+               get_values(denumire)
+            }
+         }).change();
+      });
+
+      function get_values(denumire){
+         let str_form = denumire + "Form";
+         const form = document.getElementById(str_form);
+
+         let str_tip = denumire + "Tip";
+         let str_gramaj = denumire + "Gramaj";
+         let str_cantitate = denumire + "Cantitate";
+         let str_data = "dataLivrarii" + denumire;
+
+         let dataa = {
+            denumire: String,
+            gramaj: Number,
+            cantitate: Number
+            //pret: 12
+            //data: str_dataLiv
+         }
+
+         $("#" + str_form).on("submit", function(e){
+            e.preventDefault();
+
+            if(denumire == "PlăcintăMoldovenească")
+            {
+               denumire = "Plăcintă Moldovenească";
+            }
+
+            if(denumire == "TurtaMiresei")
+            {
+               denumire = "Turta Miresei";
+            }
+
+            if(denumire == "ColacMare")
+            {
+               denumire = "Colac Mare";
+            }
+
+            let denFin = "";
+            let grFin = 0;
+            let cantFin = 0;
+
+            let fTip = document.getElementsByName(str_tip)[0];
+            denFin += denumire;
+            if(fTip != null)
+            {
+               denFin += fTip.value; 
+            }
+            let fGr = document.getElementsByName(str_gramaj)[0];
+            grFin = parseFloat(fGr.value);
+            let fCant = document.getElementsByName(str_cantitate)[0];
+            cantFin = parseInt(fCant.value);
+            let fData = document.getElementsByName(str_data)[0];
+            dataFin = fData.value;
+
+            //calcPret(denFin, grFin, cantFin);
+
+            const inputArr = [];
+            /*dataa = {
+               denumire: denFin,
+               gramaj: grFin,
+               cantitate: cantFin
+            }*/
+
+            inputArr.push(denFin, grFin, cantFin, dataFin);
+            console.log(inputArr);
+         })
+
+        // console.log(dataa);
+
+         //dataa["input"] = new Array();
+      }
+
+      function calcPret(den, gr, cant)
+      {
+         return;
+      }
+   </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "brutarieApp",
+  "description": "aplicatie brutarie",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.21",
+  }
+}
